@@ -1,0 +1,67 @@
+#piz1 {
+    text-align: center;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+#piz1:hover {
+    border: 1px solid gold;
+}
+
+#pizza {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+#crust {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+#toppings {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 20px;
+}
+
+#home h1 {
+    text-align: center;
+}
+
+#contacts {
+    background-color: rgb(25, 112, 68);
+    display: flex;
+    padding: 60px;
+}
+
+.col-sm-3 li {
+    text-align: right;
+    list-style: none;
+    margin-bottom: 15px;
+    background-color: transparent;
+}
+
+.col-sm-3 li:hover {
+    background-color: yellow;
+}
+
+.col-sm-3 h2 {
+    text-align: center;
+    padding: 12px;
+}
+
+.container {
+    margin-left: 0px;
+}
+
+.col-sm-8 {
+    border: 1px solid gold;
+    width: 700px;
+}
+
+#pizza {
+    display: flex;
+    flex-wrap: wrap;
+}
