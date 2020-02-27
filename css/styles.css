@@ -33,7 +33,24 @@
 #contacts {
     background-color: rgb(25, 112, 68);
     display: flex;
-    padding: 60px;
+}
+
+#contacts #a {
+    padding: 20px;
+}
+
+#contacts #b {
+    padding: 20px;
+}
+
+#contacts #d {
+    text-align: right;
+    margin-right: 20px;
+    padding-top: 20px;
+}
+
+#contacts #c {
+    padding: 20px;
 }
 
 .col-sm-3 li {
