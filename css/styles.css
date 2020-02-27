@@ -43,6 +43,10 @@
     padding: 20px;
 }
 
+#contacts #icons {
+    padding: 20px;
+}
+
 #contacts #d {
     text-align: right;
     margin-right: 20px;
@@ -81,4 +85,10 @@
 #pizza {
     display: flex;
     flex-wrap: wrap;
+}
+
+.logo1 {
+    height: 90px;
+    width: 90px;
+    border-radius: 60px solid gold;
 }
