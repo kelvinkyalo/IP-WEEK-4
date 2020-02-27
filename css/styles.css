@@ -90,5 +90,11 @@
 .logo1 {
     height: 90px;
     width: 90px;
+    border-radius: 100px;
+}
+
+.logo2 {
+    height: 90px;
+    width: 80%;
     border-radius: 60px solid gold;
 }
