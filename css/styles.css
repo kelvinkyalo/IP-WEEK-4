@@ -96,5 +96,9 @@
 .logo2 {
     height: 90px;
     width: 80%;
-    border-radius: 60px solid gold;
+    border-radius: 60px;
+}
+
+.navbar-nav ul {
+    padding-right: 40px;
 }
