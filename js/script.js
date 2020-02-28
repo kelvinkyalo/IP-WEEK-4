@@ -26,4 +26,16 @@ $(document).ready(function() {
     });
 
 
+
+    $("button#tone").click(function() {
+        $("ul#yohhh").prepend("<li>Topping large  __ __250ksh</li>");
+    });
+    $("button#ttwo").click(function() {
+        $("ul#yohhh").prepend("<li>Topping Medium  __ __150ksh</li>");
+    });
+    $("button#tthree").click(function() {
+        $("ul#yohhh").prepend("<li>Topping small  __ __100ksh</li>");
+    });
+
+
 });
