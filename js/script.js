@@ -14,4 +14,16 @@ $(document).ready(function() {
         $("ul#yohhh").prepend("<li>Small (19cm)  __ __600ksh</li>");
     });
 
+
+    $("button#cone").click(function() {
+        $("ul#yohhh").prepend("<li>Crispy ___150ksh</li>");
+    });
+    $("button#ctwo").click(function() {
+        $("ul#yohhh").prepend("<li>Stuffed  __ __150ksh</li>");
+    });
+    $("button#cthree").click(function() {
+        $("ul#yohhh").prepend("<li>Gluten-free  __ __150ksh</li>");
+    });
+
+
 });
