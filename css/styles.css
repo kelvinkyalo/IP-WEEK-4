@@ -261,3 +261,23 @@ input[type=submit]:hover {
 .collapsibleNavbar ul {
     text-align: right;
 }
+
+.card-body {
+    background-color: gold;
+    color: rgb(240, 245, 240);
+    float: center;
+}
+
+.card-body button {
+    background-color: rgb(0, 255, 42);
+    color: rgba(246, 253, 246, 0.966);
+    float: right;
+}
+
+.card {
+    border: 2px solid gold;
+}
+
+#line {
+    border-top: 2px solid black;
+}
