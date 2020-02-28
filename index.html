@@ -31,7 +31,10 @@
                     <a class="nav-link" href="#">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><img src="images/Order-Now-Button.png" class="logo2"></a>
+                    <a class="nav-link" href="#" id="logo2"> PLACE ORDER</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sign">Sign in</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contacts">Contacts</a>
@@ -177,117 +180,133 @@
                 </div>
             </div>
             <div class="col-sm-1">
-                <div class="card" style="width: 18rem;">
+                <!-- <div class="card" style="width: 18rem;">
                     <div class="card-body">
                         <h5 class="card-title">Your Order</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <a href="#" class="btn btn-primary">Checkout</a>
                     </div>
+                </div> -->
+
+                <div class="card" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Cras justo odio</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Vestibulum at eros</li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="card-link">Card link</a>
+                        <a href="#" class="card-link">Another link</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div>
-        <!--<meta name="viewport" content="width=device-width, initial-scale=1">
+        <div>
+            <!--<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style> -->
-        <div class="container">
-            <form action="/action_page.php">
+            <div class="container">
+                <form action="/action_page.php">
+                    <div class="row">
+                        <div class="vl">
+                            <span class="vl-innertext"></span>
+                        </div>
+                        <div class="col">
+                            <a href="#" class="fb btn">
+                                <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                            </a>
+                            <a href="#" class="twitter btn">
+                                <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                            </a>
+                            <a href="#" class="google btn">
+                                <i class="fa fa-google fa-fw"></i> Login with Google+
+                            </a>
+                        </div>
+                        <div class="col">
+                            <div class="hide-md-lg">
+                                <p>Sign in:</p>
+                            </div>
+                            <input type="text" name="username" placeholder="Username" required>
+                            <input type="password" name="password" placeholder="Password" required>
+                            <input type="submit" value="Login">
+                        </div>
+                        <div class="bottom-container">
+                            <div class="row">
+                                <div class="col">
+                                    <a href="#" style="color:white" class="btn">Sign up</a>
+                                </div>
+                                <div class="col">
+                                    <a href="#" style="color:white" class="btn">Forgot password?</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-container">
                 <div class="row">
-                    <div class="vl">
-                        <span class="vl-innertext"></span>
+                    <div class="col">
+                        <a href="#" style="color:white" class="btn">Sign up</a>
                     </div>
                     <div class="col">
-                        <a href="#" class="fb btn">
-                            <i class="fa fa-facebook fa-fw"></i> Login with Facebook
-                        </a>
-                        <a href="#" class="twitter btn">
-                            <i class="fa fa-twitter fa-fw"></i> Login with Twitter
-                        </a>
-                        <a href="#" class="google btn">
-                            <i class="fa fa-google fa-fw"></i> Login with Google+
-                        </a>
+                        <a href="#" style="color:white" class="btn">Forgot password?</a>
                     </div>
-                    <div class="col">
-                        <div class="hide-md-lg">
-                            <p>Sign in:</p>
-                        </div>
-                        <input type="text" name="username" placeholder="Username" required>
-                        <input type="password" name="password" placeholder="Password" required>
-                        <input type="submit" value="Login">
-                    </div>
-                    <div class="bottom-container">
-                        <div class="row">
-                            <div class="col">
-                                <a href="#" style="color:white" class="btn">Sign up</a>
-                            </div>
-                            <div class="col">
-                                <a href="#" style="color:white" class="btn">Forgot password?</a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </form>
-        </div>
-        <div class="bottom-container">
-            <div class="row">
-                <div class="col">
-                    <a href="#" style="color:white" class="btn">Sign up</a>
-                </div>
-                <div class="col">
-                    <a href="#" style="color:white" class="btn">Forgot password?</a>
                 </div>
             </div>
+
         </div>
 
-    </div>
 
 
+        <div class="jumbotron text-center" style="margin-bottom:0">
+            <div id="contacts">
+                <div id="a">
+                    <h4>MENU</h4><br>
 
-    <div class="jumbotron text-center" style="margin-bottom:0">
-        <div id="contacts">
-            <div id="a">
-                <h4>MENU</h4><br>
-
-                <p>Order Online<br>Pizza<br>Toppings<br>Crusts<br>offers
-                </p>
+                    <p>Order Online<br>Pizza<br>Toppings<br>Crusts<br>offers
+                    </p>
+                </div>
+                <div id="b">
+                    <h4>MY ACCOUNT</h4><br>
+                    <p>Creat an ACCOUNT<br>Sing In
+                    </p>
+                </div>
+                <div id="icons">
+                    <h4>LIKE OUR PAGES;</h4>
+                    <br>
+                    <img src="images/facebook.png">
+                    <img src="images/flickr.png">
+                    <img src="images/g_plus.png">
+                    <img src="images/pinterest.png">
+                    <br>
+                    <img src="images/skype.png">
+                    <img src="images/twitter.png">
+                    <br>
+                    <img src="images/you_tube.png">
+                </div>
+                <div id="c">
+                    <h4>CUSTOMER SERVICE</h4><br>
+                    <p>Contact<br>Blog<br>Find mikey's pizza<br>help<br>
+                    </p>
+                </div>
+                <div id="e">
+                    <img src="images/mike3.jpg">
+                </div>
             </div>
-            <div id="b">
-                <h4>MY ACCOUNT</h4><br>
-                <p>Creat an ACCOUNT<br>Sing In
-                </p>
-            </div>
-            <div id="icons">
-                <h4>LIKE OUR PAGES;</h4>
-                <br>
-                <img src="images/facebook.png">
-                <img src="images/flickr.png">
-                <img src="images/g_plus.png">
-                <img src="images/pinterest.png">
-                <br>
-                <img src="images/skype.png">
-                <img src="images/twitter.png">
-                <br>
-                <img src="images/you_tube.png">
-            </div>
-            <div id="c">
-                <h4>CUSTOMER SERVICE</h4><br>
-                <p>Contact<br>Blog<br>Find mikey's pizza<br>help<br>
-                </p>
-            </div>
-            <div id="e">
-                <img src="images/mike3.jpg">
+            <br><br>
+            <div id="d">
+                <div class="copyright">
+                    2020 DONNIES PIZZA.All Rights Reserved.</br>
+                    Privacy Policy | Terms of Use
+                </div>
             </div>
         </div>
-        <br><br>
-        <div id="d">
-            <div class="copyright">
-                2020 DONNIES PIZZA.All Rights Reserved.</br>
-                Privacy Policy | Terms of Use
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>

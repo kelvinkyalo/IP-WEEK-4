@@ -76,7 +76,7 @@
 }
 
 .col-sm-8 {
-    border: 1px solid gold;
+    /* border: 1px solid gold; */
     width: 700px;
 }
 
@@ -86,19 +86,22 @@
 }
 
 .logo1 {
-    height: 90px;
-    width: 90px;
+    height: 120px;
+    width: 120px;
     border-radius: 100px;
 }
 
 .logo2 {
-    height: 90px;
-    width: 80%;
-    border-radius: 60px;
+    border: 1px solid gold;
+    background-color: greenyellow;
 }
 
 .navbar-nav ul {
-    padding-right: 40px;
+    padding-right: 60px;
+}
+
+.nav-link {
+    padding-right: 50px;
 }
 
 
@@ -253,4 +256,8 @@ input[type=submit]:hover {
         display: block;
         text-align: center;
     }
+}
+
+.collapsibleNavbar ul {
+    text-align: right;
 }
