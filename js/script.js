@@ -37,5 +37,14 @@ $(document).ready(function() {
         $("ul#yohhh").prepend("Topping small  price =100ksh + /- ");
     });
 
+    $("button#done").click(function() {
+        $("ul#yohhh").prepend("Delivery charge =200ksh");
+        prompt("Where should the delivery be made?");
+        alert("your order will be delivered to your location")
+    });
+    $("button#dtwo").click(function() {
+        $("ul#yohhh").prepend("No Delivery charge =0ksh");
+    });
+
 
 });
