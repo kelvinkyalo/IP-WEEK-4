@@ -1,7 +1,7 @@
 #piz1 {
     text-align: center;
     justify-content: space-around;
-    padding: 30px;
+    padding: 20px;
 }
 
 #piz1:hover {
@@ -11,7 +11,7 @@
 #pizza {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 #crust {
@@ -72,12 +72,12 @@
 }
 
 .container {
-    margin-left: 0px;
+    margin-left: 10px;
 }
 
 .col-sm-8 {
     /* border: 1px solid gold; */
-    width: 700px;
+    margin-right: 0;
 }
 
 #pizza {
@@ -121,8 +121,12 @@ body {
 .container {
     position: relative;
     border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px 0 30px 0;
+    background-color: #949292;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    margin-top: 50px;
 }
 
 
@@ -130,7 +134,7 @@ body {
 
 input,
 .btn {
-    width: 100%;
+    width: 60%;
     padding: 12px;
     border: none;
     border-radius: 4px;
@@ -184,9 +188,9 @@ input[type=submit]:hover {
 
 .col {
     float: left;
-    width: 50%;
+    width: 60%;
     margin: auto;
-    padding: 0 50px;
+    padding: 0 10px;
     margin-top: 6px;
 }
 
@@ -204,7 +208,7 @@ input[type=submit]:hover {
 
 .vl {
     position: absolute;
-    left: 50%;
+    left: 60%;
     transform: translate(-50%);
     border: 2px solid #ddd;
     height: 175px;
@@ -244,7 +248,7 @@ input[type=submit]:hover {
 
 @media screen and (max-width: 650px) {
     .col {
-        width: 100%;
+        width: 60%;
         margin-top: 0;
     }
     /* hide the vertical line */
@@ -280,4 +284,12 @@ input[type=submit]:hover {
 
 #line {
     border-top: 2px solid black;
+}
+
+#yoh li {
+    text-decoration: none;
+}
+
+#checkout-page {
+    padding-bottom: 40px;
 }

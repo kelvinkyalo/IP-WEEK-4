@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+    <div id="checkout-page">
+        <div class="container">
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="vl">
+                        <span class="vl-innertext"></span>
+                    </div>
+                    <div class="col">
+                        <p>sign in with;</p>
+                        <a href="#" class="fb btn">
+                            <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+                        </a>
+                        <a href="#" class="twitter btn">
+                            <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+                        </a>
+                        <a href="#" class="google btn">
+                            <i class="fa fa-google fa-fw"></i> Login with Google+
+                        </a>
+                    </div>
+                    <div class="col">
+                        <div class="hide-md-lg">
+                            <p>Sign in:</p>
+                        </div>
+                        <input type="text" name="username" placeholder="Username" required>
+                        <input type="password" name="password" placeholder="Password" required>
+                        <input type="submit" value="Login">
+                    </div>
+
+
+                </div>
+                <div class="bottom-container">
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" style="color:white" class="btn">Sign up</a>
+                        </div>
+                        <div class="col">
+                            <a href="#" style="color:white" class="btn">Forgot password?</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-sm-1">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Your Order</h5>
+                </div>
+                <ul class="list-group list-group-flush" id="yoh">
+
+                </ul>
+
+                <ul class="list-group list-group-flush" id="yohh">
+
+                </ul>
+                <ul class="list-group list-group-flush" id="yohhh">
+
+                </ul>
+
+                <ul class="list-group list-group-flush" id="cyoh">
+
+                </ul>
+                <ul class="list-group list-group-flush" id="cyoh">
+
+                </ul>
+
+                <li class="list-group-item" id="line">TOTAL:<span> 0Ksh</span></li>
+                </ul>
+                <div class="card-body">
+
+                    <a href="checkout.html"><button>CHECKOUT</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
