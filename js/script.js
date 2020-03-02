@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $("button#one").click(function() {
-        $("ul#yoh").prepend("Large(30cm) <span>price =1150ksh + /-</span>");
+        $("ul#yoh").prepend("Large(30cm) price =1150ksh + /-");
 
     });
 

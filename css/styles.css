@@ -6,6 +6,8 @@
 
 #piz1:hover {
     border: 1px solid gold;
+    background-color: rgb(8, 2, 39);
+    color: lightgreen;
 }
 
 #pizza {
@@ -31,8 +33,9 @@
 }
 
 #contacts {
-    background-color: rgb(25, 112, 68);
+    background-color: rgb(201, 214, 22);
     display: flex;
+    color: navy;
 }
 
 #contacts #a {
@@ -76,8 +79,9 @@
 }
 
 .col-sm-8 {
-    /* border: 1px solid gold; */
     margin-right: 0;
+    background-color: rgba(193, 196, 44, 0.986);
+    color: rgb(16, 16, 248);
 }
 
 #pizza {
@@ -89,11 +93,19 @@
     height: 120px;
     width: 120px;
     border-radius: 100px;
+    margin-right: 80px;
 }
 
 .logo2 {
-    border: 1px solid gold;
+    border-radius: 100px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.logo3 {
+    border: 1px solid rgb(35, 51, 139);
     background-color: greenyellow;
+    margin-right: 100px;
 }
 
 .navbar-nav ul {
@@ -104,33 +116,21 @@
     padding-right: 50px;
 }
 
-
-/* sign in form */
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 * {
     box-sizing: border-box;
 }
 
-
-/* style the container */
-
 .container {
     position: relative;
     border-radius: 5px;
-    background-color: #949292;
+    background-color: #8df389;
     padding-top: 20px;
     padding-left: 20px;
     padding-bottom: 20px;
     padding-right: 30px;
     margin-top: 50px;
+    margin-bottom: 30px;
 }
-
-
-/* style inputs and link buttons */
 
 input,
 .btn {
@@ -144,16 +144,12 @@ input,
     font-size: 17px;
     line-height: 20px;
     text-decoration: none;
-    /* remove underline from anchors */
 }
 
 input:hover,
 .btn:hover {
     opacity: 1;
 }
-
-
-/* add appropriate colors to fb, twitter and google buttons */
 
 .fb {
     background-color: #3B5998;
@@ -170,9 +166,6 @@ input:hover,
     color: white;
 }
 
-
-/* style the submit button */
-
 input[type=submit] {
     background-color: #4CAF50;
     color: white;
@@ -183,9 +176,6 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
-
-/* Two-column layout */
-
 .col {
     float: left;
     width: 60%;
@@ -194,17 +184,11 @@ input[type=submit]:hover {
     margin-top: 6px;
 }
 
-
-/* Clear floats after the columns */
-
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-
-
-/* vertical line */
 
 .vl {
     position: absolute;
@@ -213,9 +197,6 @@ input[type=submit]:hover {
     border: 2px solid #ddd;
     height: 175px;
 }
-
-
-/* text inside the vertical line */
 
 .vl-innertext {
     position: absolute;
@@ -227,15 +208,9 @@ input[type=submit]:hover {
     padding: 8px 10px;
 }
 
-
-/* hide some text on medium and large screens */
-
 .hide-md-lg {
     display: ;
 }
-
-
-/* bottom container */
 
 .bottom-container {
     text-align: center;
@@ -243,19 +218,14 @@ input[type=submit]:hover {
     border-radius: 0px 0px 4px 4px;
 }
 
-
-/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
-
 @media screen and (max-width: 650px) {
     .col {
         width: 60%;
         margin-top: 0;
     }
-    /* hide the vertical line */
     .vl {
         display: none;
     }
-    /* show the hidden text on small screens */
     .hide-md-lg {
         display: block;
         text-align: center;
@@ -267,7 +237,7 @@ input[type=submit]:hover {
 }
 
 .card-body {
-    background-color: gold;
+    background-color: rgb(199, 172, 18);
     color: rgb(240, 245, 240);
     float: center;
 }
