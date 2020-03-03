@@ -1,63 +1,48 @@
-$(document).ready(function() {
-    $("button#one").click(function() {
-        $("ul#yoh").prepend("Large(30cm) price =1150ksh + /-");
-
-    });
-
-    $("button#two").click(function() {
-        $("ul#yohh").prepend("Medium (23cm)  price =800ksh + /- ");
-
-    });
-
-
-    $("button#three").click(function() {
-        $("ul#yohhh").prepend("Small (19cm)  price =600ksh + /- ");
-    });
+ $(document).ready(function() {
+     $("button#done").click(function() {
+         $("ul#yohhh").prepend("Delivery charge =200ksh");
+         prompt("Where should the delivery be made?");
+         alert("delivery fee is 200ksh \n your order will be delivered to your location")
+     });
+     $("button#dtwo").click(function() {
+         $("ul#yohhh").prepend("No Delivery charge =0ksh");
+     });
+ });
 
 
-    $("button#cone").click(function() {
-        $("ul#yohhh").prepend("Crispy  price =150ksh + /- ");
-    });
-    $("button#ctwo").click(function() {
-        $("ul#yohhh").prepend("Stuffed  price =150ksh + /- ");
-    });
-    $("button#cthree").click(function() {
-        $("ul#yohhh").prepend("Gluten-free  price =150ksh + /- ");
-    });
+ function getSizeCost() {
+     var selectedSize = document.getElementById("pizzasize").value;
+     return parseInt(selectedSize);
+ }
+
+ function getCrustCost() {
+     var selectedCrust = document.getElementById("crusttype").value;
+     return parseInt(selectedCrust);
+ }
+
+ function getToppingCost() {
+     var selectedTopping = document.getElementById("toppingone").value;
+     return parseInt(selectedTopping);
+ }
+
+ function getNumber() {
+     var selectedNumber = document.getElementById("orderno").value;
+     return parseInt(selectedNumber);
+ }
 
 
+ function calctotalPrice(e) {
+     event.preventDefault();
+     var totalPrice = (getSizeCost() + getCrustCost() + getToppingCost()) * (getNumber());
+     console.log(totalPrice);
+     alert("Your order of " + getNumber() + " pizzas has been processed.Your total amount payable is " + totalPrice + ".")
+ }
+ $(document).ready(function() {
+     $("#delivery").submit(function() {
+         var name = $("input#name").val();
+         var number = $("input#number").val();
+         var location = $("input#location").val();
+         alert("Hello " + name + ". Your order has been successfuly received and will be delivered to " + location + " within one hour.The delivery will cost ksh 180/= Thank you for chosing the pizzeria.");
 
-    $("button#tone").click(function() {
-        $("ul#yohhh").prepend("Topping large   price =2150ksh + /- ");
-    });
-    $("button#ttwo").click(function() {
-        $("ul#yohhh").prepend("Topping Medium   price =150ksh + /- ");
-    });
-    $("button#tthree").click(function() {
-        $("ul#yohhh").prepend("Topping small  price =100ksh + /- ");
-    });
-
-    $("button#done").click(function() {
-        $("ul#yohhh").prepend("Delivery charge =200ksh");
-        prompt("Where should the delivery be made?");
-        alert("your order will be delivered to your location")
-    });
-    $("button#dtwo").click(function() {
-        $("ul#yohhh").prepend("No Delivery charge =0ksh");
-    });
-
-
-});
-$(document).ready(function() {
-    var add = function(number1, number2) {
-        return number1 + number2;
-    };
-
-    $("form#add").submit(function(event) {
-        event.preventDefault();
-        var number1 = parseInt($("#add1").val());
-        var number2 = parseInt($("#add2").val());
-        var result = add(number1, number2);
-        $("#output").text(result);
-    });
-});
+     });
+ });

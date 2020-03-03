@@ -19,7 +19,6 @@
 #crust {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 20px;
 }
 
 #toppings {
@@ -30,6 +29,12 @@
 
 #home h1 {
     text-align: center;
+}
+
+.col-sm-8 {
+    margin-right: 0;
+    background-color: rgba(193, 196, 44, 0.986);
+    color: rgb(16, 16, 248);
 }
 
 #contacts {
@@ -58,35 +63,25 @@
     padding: 20px;
 }
 
-.col-sm-3 li {
+.col-sm-4 li {
     text-align: right;
     list-style: none;
     margin-bottom: 15px;
     background-color: transparent;
 }
 
-.col-sm-3 li:hover {
+.col-sm-4 li:hover {
     background-color: yellow;
 }
 
-.col-sm-3 h2 {
+.col-sm-4 h2 {
     text-align: center;
     padding: 12px;
 }
 
 .container {
     margin-left: 10px;
-}
-
-.col-sm-8 {
-    margin-right: 0;
-    background-color: rgba(193, 196, 44, 0.986);
-    color: rgb(16, 16, 248);
-}
-
-#pizza {
-    display: flex;
-    flex-wrap: wrap;
+    background-color: hotpink;
 }
 
 .logo1 {
@@ -103,7 +98,7 @@
 }
 
 .logo3 {
-    border: 1px solid rgb(35, 51, 139);
+    border: 1px solid rgb(139, 35, 104);
     background-color: greenyellow;
     margin-right: 100px;
 }
@@ -123,13 +118,14 @@
 .container {
     position: relative;
     border-radius: 5px;
-    background-color: #8df389;
+    background-color: #01f115;
     padding-top: 20px;
     padding-left: 20px;
     padding-bottom: 20px;
     padding-right: 30px;
     margin-top: 50px;
     margin-bottom: 30px;
+    margin-left: 60px;
 }
 
 input,
@@ -190,76 +186,38 @@ input[type=submit]:hover {
     clear: both;
 }
 
-.vl {
-    position: absolute;
-    left: 60%;
-    transform: translate(-50%);
-    border: 2px solid #ddd;
-    height: 175px;
-}
-
-.vl-innertext {
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #f1f1f1;
-    border: 1px solid #ccc;
-    border-radius: 50%;
-    padding: 8px 10px;
-}
-
-.hide-md-lg {
-    display: ;
-}
-
-.bottom-container {
-    text-align: center;
-    background-color: #666;
-    border-radius: 0px 0px 4px 4px;
-}
-
-@media screen and (max-width: 650px) {
-    .col {
-        width: 60%;
-        margin-top: 0;
-    }
-    .vl {
-        display: none;
-    }
-    .hide-md-lg {
-        display: block;
-        text-align: center;
-    }
-}
-
 .collapsibleNavbar ul {
     text-align: right;
 }
 
-.card-body {
-    background-color: rgb(199, 172, 18);
-    color: rgb(240, 245, 240);
-    float: center;
+.dropdown {
+    position: relative;
+    display: inline-block;
 }
 
-.card-body button {
-    background-color: rgb(0, 255, 42);
-    color: rgba(246, 253, 246, 0.966);
-    float: right;
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e3fc08;
+    width: 300px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 15px 15px;
+    z-index: 1;
 }
 
-.card {
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#receipt {
+    background-color: rgba(69, 243, 26, 0.87);
     border: 2px solid gold;
+    margin-left: 60px;
+    margin-right: 185px;
+    margin-top: 30px;
 }
 
-#line {
-    border-top: 2px solid black;
-}
-
-#yoh li {
-    text-decoration: none;
-}
-
-#checkout-page {
-    padding-bottom: 40px;
+#submit {
+    margin-left: 600px;
+    margin-top: 40px;
 }

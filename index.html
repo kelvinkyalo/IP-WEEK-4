@@ -28,16 +28,16 @@
                     <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Menu</a>
+                    <a class="nav-link" href="#menu">Menu</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><img src="images/MikeysPizza-PLATE-750x750.jpg" height="130px" width="130px" class="logo2"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><button class="logo3">PLACE ORDER</button></a>
+                    <a class="nav-link" href="#order"><button class="logo3">PLACE ORDER</button></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#sign">Sign in</a>
+                    <a class="nav-link" href="checkout.html">Sign in</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contacts">Contacts</a>
@@ -45,92 +45,90 @@
             </ul>
         </div>
     </nav>
+    <div id="receipt">
+        <h3>RECEIPT:</h3>
+        <form action="" id="pizzainfo-pi">
+            <label for=""></label>
+            <div class="dropdown">
+                <span>Click here to place your order</span>
+                <div class="dropdown-content">
+                    <select class="form-control" name="size" id="pizzasize">
+                          <option value="1200">Large pizza goes for 1200</option>
+                            <br />
+                            <br />
+                          <option value="900">Medium pizza goes for 900</option>
+                            <br />
+                            <br />
+                          <option value="600">Small pizza goes for 600</option>
+                            </select>
 
 
-    <form action="/action_page.php" method="get">
-        <input type="checkbox" name="large pizza" value=" 1000">
-        <label for="vehicle1"> large pizza</label><br>
 
-        <input type="checkbox" name="medium pizza" value="800">
-        <label for="vehicle2"> medium pizza</label><br>
+                    <label for=""></label>
+                    <select class="form-control" name="" id="crusttype">
+                          <option value="230" name="crust">butter crust goes for 230</option>
+                             <br/>
+                             <br />
+                          <option value="250" name="crust">Hajun butter goes for 250</option>
+                             <br/>
+                             <br />
+                          <option value="300" name="crust">Parmesan goes for 300</option>
+                            </select>
 
-        <input type="checkbox" name="small pizza" value="600">
-        <label for="vehicle3"> small pizza</label><br><br>
-
-        <input type="submit" value="Submit">
-
-    </form>
-
-    <div class="container">
-        <h2>PLACE ORDER</h2>
-        <div class="btn-group">
-            <button type="button" class="btn btn-primary">Pizza size</button>
-            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#"><button id="one">Large(30cm)  price =1150ksh</button></a><br>
-                <a class="dropdown-item" href="#"><button id="two">Medium (23cm)  price =800ksh</button></a><br>
-                <a class="dropdown-item" href="#"><button id="three">Small (19cm)  price =600ksh</button></a><br>
+                    <label for=""></label>
+                    <select class="form-control" name="" id="toppingone">
+                          <option value="200" name="crust">Mushroom large goes for 200</option>
+                             <br/>
+                             <br />
+                          <option value="150" name="crust">Mushroom medium goes for  150</option>
+                             <br/>
+                             <br />
+                          <option value="100" name="crust">Mushroom small goes for  100</option>
+                            </select>
+                </div>
             </div>
-        </div>
+            <br/>
+            <br />
+            <form>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="orderno" name="quantity" min="1" max="20" step=value="30" style="border: 1px solid red;">
+                <br />
+                <br />
+            </form>
 
-        <div class="btn-group">
-            <button type="button" class="btn btn-secondary">Crust</button>
-            <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#"><button id="cone">Crispy price =150ksh</button></a>
-                <a class="dropdown-item" href="#"><button id="ctwo">Stuffed  price =150ksh</button> </a>
-                <a class="dropdown-item" href="#"><button id="cthree">Gluten-free  price =150ksh</button></a>
-
+            <div class="btn-group">
+                <button type="button" class="btn btn-info">Delivery</button>
+                <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown"> </button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#"><button id="done">Delivery charge =200ksh</button></a>
+                    <a class="dropdown-item" href="#"><button id="dtwo">No Delivery charge =0ksh</button></a>
+                </div>
             </div>
-        </div>
-
-        <div class="btn-group">
-            <button type="button" class="btn btn-success">Toppings</button>
-            <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#"><button id="tone">Topping large price =250ksh</button></a>
-                <a class="dropdown-item" href="#"><button id="ttwo">Topping Medium  price =150ksh</button></a>
-                <a class="dropdown-item" href="#"><button id="tthree">Topping small  price =100ksh</button></a>
-            </div>
-        </div>
-
-        <div class="btn-group">
-            <button type="button" class="btn btn-info">Delivery</button>
-            <button type="button" class="btn btn-info dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
-            </button>
-            <div class="dropdown-menu">
-                <a class="dropdown-item" href="#"><button id="done">Delivery charge =200ksh</button></a>
-                <a class="dropdown-item" href="#"><button id="dtwo">No Delivery charge =0ksh</button></a>
-            </div>
-        </div>
-
+            <button name="button" type="submit" id="submit" value="Check-Out" onclick="calctotalPrice()">Submit</button>
+        </form>
     </div>
     <div class="container" style="margin-top:30px">
         <div class="row">
-            <div class="col-sm-3">
-                <h2>Menu</h2>
-                <ul>
+            <div class="col-sm-4">
+                <div id="menu">
+                    <h2>Menu</h2>
+                    <ul>
 
-                    <li>
-                        <a class="nav-link" href="#offers">Offers</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#pizza">Pizza</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#crust">Crust</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#toppings">Toppings</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="#eeeee">eeeee</a>
-                    </li>
-                </ul>
+                        <li>
+                            <a class="nav-link" href="#offers">Offers</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#pizza">Pizza</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#crust">Crust</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#toppings">Toppings</a>
+                        </li>
+                    </ul>
 
+                </div>
             </div>
             <div class="col-sm-8">
 
@@ -146,22 +144,24 @@
                         </div>
                         <div id="piz1">
                             <img src="images/npizza2.png" height="250px" width="250px"><br>
-                            <h4>All meat</h4>
-                            <p>Pepperoni,ham,Italian sausage,<br> beef and bacon.</p>
+                            <h4>Aloha Chicken</h4>
+                            <p>Chipotle sauce base, grilled chicken, ham, <br/>pineapple, drizzled sauce.</p>
                             <p>1200ksh</p>
                             <button>ADD</button>
                         </div>
                         <div id="piz1">
                             <img src="images/npizza3.png" height="250px" width="250px"><br>
-                            <h4>All meat</h4>
-                            <p>Pepperoni,ham,Italian sausage,<br> beef and bacon.</p>
+                            <h4>BBQ Chicken</h4>
+                            <p>BBQ sauce, grilled chicken,onion,<br> and bacon, drizzled with BBQ sauce.
+                            </p>
                             <p>1200ksh</p>
                             <button>ADD</button>
                         </div>
                         <div id="piz1">
                             <img src="images/npizza4.png" height="250px" width="250px"><br>
-                            <h4>All meat</h4>
-                            <p>Pepperoni,ham,Italian sausage,<br> beef and bacon.</p>
+                            <h4>BLT</h4>
+                            <p>No sauce base and lettuce, drizzled<br> with homemade ranch.
+                            </p>
                             <p>1200ksh</p>
                             <button>ADD</button>
                         </div>
@@ -171,29 +171,25 @@
                     <div id="crust">
                         <div id="piz1">
                             <img src="images/crust1.png" height="350px" width="350px"><br>
-                            <h4>All meat</h4>
-                            <p>Crispy</p>
-                            <p>150ksh</p>
+                            <h4>butter</h4>
+                            <p>230ksh</p>
                             <button>ADD</button>
                         </div>
                         <div id="piz1">
                             <img src="images/crust2.png" height="250px" width="250px"><br>
-                            <h4>All meat</h4>
-                            <p>Stuffed</p>
-                            <p>1200ksh</p>
+                            <h4>Cajun butter</h4>
+                            <p>250ksh</p>
                             <button>ADD</button>
                         </div>
                         <div id="piz1">
                             <img src="images/crust3.png" height="250px" width="250px"><br>
-                            <h4>All meat</h4>
-                            <p>Gluten-free</p>
-                            <p>1200ksh</p>
+                            <h4>Parmesan</h4>
+                            <p>300ksh</p>
                             <button>ADD</button>
                         </div>
                         <div id="piz1">
                             <img src="images/crust4.png" height="250px" width="250px"><br>
-                            <h4>All meat</h4>
-                            <p>Gluten-free</p>
+                            <h4>Sesame seed</h4>
                             <p>1200ksh</p>
                             <button>ADD</button>
                         </div>
@@ -202,73 +198,33 @@
                     <div id="toppings">
                         <div id="piz1">
                             <img src="images/topping1.png" height="250px" width="250px"><br>
-                            <h4>Gluten-free</h4>
+                            <h4>Caesar</h4>
                             <p>1200ksh</p>
                             <button>ADD</button>
                         </div>
                         <div id="piz1">
                             <img src="images/topping2.png" height="250px" width="250px"><br>
-                            <h4>Gluten-free</h4>
+                            <h4>blue cheese</h4>
                             <p>1200ksh</p>
                             <button>ADD</button>
                         </div>
                         <div id="piz1">
                             <img src="images/p11.png" height="250px" width="250px"><br>
-                            <h4>Gluten-free</h4>
+                            <h4>French</h4>
                             <p>1200ksh</p>
                             <button>ADD</button>
                         </div>
                         <div id="piz1">
                             <img src="images/topping4.png" height="250px" width="250px"><br>
-                            <h4>Gluten-free</h4>
+                            <h4>Honey mustard</h4>
                             <p>1200ksh</p>
                             <button>ADD</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-sm-1">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">Your Order</h5>
-                    </div>
-                    <form id="add">
-                        <ul class="list-group list-group-flush" id="yoh">
 
-                            <input id="add1" class="form-control" type="text">
-                        </ul>
-
-                        <ul class="list-group list-group-flush" id="yohh">
-
-                        </ul>
-                        <ul class="list-group list-group-flush" id="yohhh">
-
-                        </ul>
-
-                        <ul class="list-group list-group-flush" id="cyoh">
-
-                        </ul>
-                        <ul class="list-group list-group-flush" id="cyoh">
-
-                            <input id="add2" class="form-control" type="text">
-                        </ul>
-                        <ul class="list-group list-group-flush" id="cyoh">
-
-                        </ul>
-
-                        <li class="list-group-item" id="line"><button type="submit" class="btn">TOTAL:</button></li>
-                        <div id="output"></div>
-                        </ul>
-                    </form>
-
-                    <div class="card-body">
-
-                        <a href="checkout.html"><button>CHECKOUT</button></a>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
     </div>
     <div class="jumbotron text-center" style="margin-bottom:0">
         <div id="contacts">
