@@ -35,14 +35,5 @@
      event.preventDefault();
      var totalPrice = (getSizeCost() + getCrustCost() + getToppingCost()) * (getNumber());
      console.log(totalPrice);
-     alert("Your order of " + getNumber() + " pizzas has been processed.Your total amount payable is " + totalPrice + ".")
+     alert("Your order " + getNumber() + "pizzas @ " + totalPrice + "Ksh.")
  }
- $(document).ready(function() {
-     $("#delivery").submit(function() {
-         var name = $("input#name").val();
-         var number = $("input#number").val();
-         var location = $("input#location").val();
-         alert("Hello " + name + ". Your order has been successfuly received and will be delivered to " + location + " within one hour.The delivery will cost ksh 180/= Thank you for chosing the pizzeria.");
-
-     });
- });
