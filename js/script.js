@@ -10,30 +10,30 @@
  });
 
 
- function getSizeCost() {
-     var selectedSize = document.getElementById("pizzasize").value;
-     return parseInt(selectedSize);
+ function typeCost() {
+     var pizzaSize = document.getElementById("pizzachoice").value;
+     return parseInt(pizzaSize);
  }
 
- function getCrustCost() {
-     var selectedCrust = document.getElementById("crusttype").value;
-     return parseInt(selectedCrust);
+ function crustCost() {
+     var pizzaCrust = document.getElementById("crustchoice").value;
+     return parseInt(pizzaCrust);
  }
 
- function getToppingCost() {
-     var selectedTopping = document.getElementById("toppingone").value;
-     return parseInt(selectedTopping);
+ function toppingCost() {
+     var pizzaTopping = document.getElementById("toppingchoice").value;
+     return parseInt(pizzaTopping);
  }
 
- function getNumber() {
-     var selectedNumber = document.getElementById("orderno").value;
-     return parseInt(selectedNumber);
+ function number() {
+     var noOfPizzas = document.getElementById("orderno").value;
+     return parseInt(noOfPizzas);
  }
 
 
- function calctotalPrice(e) {
+ function finalAmount() {
+     var allPrice = (typeCost() + crustCost() + toppingCost()) * (number());
+     console.log(allPrice);
+     alert("Your order " + number() + "pizzas @ " + allPrice + "Ksh.")
      event.preventDefault();
-     var totalPrice = (getSizeCost() + getCrustCost() + getToppingCost()) * (getNumber());
-     console.log(totalPrice);
-     alert("Your order " + getNumber() + "pizzas @ " + totalPrice + "Ksh.")
  }
