@@ -10,17 +10,17 @@
  });
 
 
- function typeCost() {
+ function pizzaPrice() {
      var pizzaSize = document.getElementById("pizzachoice").value;
      return parseInt(pizzaSize);
  }
 
- function crustCost() {
+ function crustPrice() {
      var pizzaCrust = document.getElementById("crustchoice").value;
      return parseInt(pizzaCrust);
  }
 
- function toppingCost() {
+ function toppingPrice() {
      var pizzaTopping = document.getElementById("toppingchoice").value;
      return parseInt(pizzaTopping);
  }
@@ -32,7 +32,7 @@
 
 
  function finalAmount() {
-     var allPrice = (typeCost() + crustCost() + toppingCost()) * (number());
+     var allPrice = (pizzaPrice() + crustPrice() + toppingPrice()) * (number());
      console.log(allPrice);
      alert("Your order " + number() + "pizzas @ " + allPrice + "Ksh.")
      event.preventDefault();
