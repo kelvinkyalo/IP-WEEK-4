@@ -47,7 +47,7 @@
         </div>
     </nav>
     <div id="receipt">
-        <h3>RECEIPT:</h3>
+        <h3>YOUR ORDER:</h3>
         <form action="" id="pizzainfo-pi">
             <label for=""></label>
             <div class="dropdown">
@@ -107,6 +107,56 @@
             </div>
             <button name="button" type="submit" id="submit" value="Check-Out" onclick="finalAmount()">Submit</button>
         </form>
+    </div>
+
+    <div class="container" id="box">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Here is your receipt:</h2>
+                <form id="new-contact">
+                    <div class="form-group">
+                        <label for="new-first-name">Pizza size</label>
+                        <input type="text" class="form-control" id="new-first-name">
+                        <div class="dropdown-content">
+                            <select class="form-control" name="size" id="pizzachoice">
+                                  <option value="1200">Large pizza goes for 1200</option>
+                                    <br />
+                                    <br />
+                                  <option value="900">Medium pizza goes for 900</option>
+                                    <br />
+                                    <br />
+                                  <option value="600">Small pizza goes for 600</option>
+                                    </select>
+
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="new-last-name">crust type</label>
+                        <input type="text" class="form-control" id="new-last-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="new-third-name">Toppings</label>
+                        <input type="text" class="form-control" id="new-third-name">
+                    </div>
+
+                    <button type="submit" class="btn">combo</button>
+                </form>
+
+                <h2>Your order is;</h2>
+                <ul id="contacts">
+                    <div class="col-md-6">
+                        <div id="show-contact">
+                            <h2></h2>
+
+                            <p>First name: <span class="first-name"></span></p>
+                            <p>Last name: <span class="last-name"></span></p>
+                            <p>Third name: <span class="third-name"></span></p>
+                        </div>
+                    </div>
+
+                </ul>
+            </div>
+        </div>
     </div>
     <div class="container" style="margin-top:30px">
         <div class="row">

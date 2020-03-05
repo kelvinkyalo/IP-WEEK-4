@@ -225,3 +225,18 @@ input[type=submit]:hover {
     margin-left: 600px;
     margin-top: 40px;
 }
+
+#show-contact {
+    display: none;
+}
+
+.contact {
+    cursor: pointer;
+    color: #0088cc;
+}
+
+.contact:hover {
+    text-decoration: underline;
+}
+
+#box {}

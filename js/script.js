@@ -37,3 +37,29 @@
      alert("Your order " + number() + "pizzas @ " + allPrice + "Ksh.")
      event.preventDefault();
  }
+
+ function Contact(first, last, third) {
+     this.firstName = first;
+     this.lastName = last;
+     this.thirdName = third;
+ }
+ $(document).ready(function() {
+     $("form#new-contact").submit(function(event) {
+         event.preventDefault();
+         var inputtedFirstName = $("input#new-first-name").val();
+         var inputtedLastName = $("input#new-last-name").val();
+         var inputtedThirdName = $("input#new-third-name").val();
+         var newContact = new Contact(inputtedFirstName, inputtedLastName, inputtedThirdName);
+         $("ul#contacts").append("<li><span class='contact'>" + newContact.firstName + " " + newContact.lastName + " " + newContact.thirdName + "</span></li>");
+         $("input#new-first-name").val("");
+         $("input#new-last-name").val("");
+         $("input#new-third-name").val("")
+     });
+ });
+
+ function Contact(first, last, third) {
+     this.firstName = first;
+     this.lastName = last;
+     this.thirdName = third;
+ }
+ Contact.prototype.fullName = function() { return this.firstName + " " + this.lastName + " " + this.thirdName; }
